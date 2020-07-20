@@ -7,4 +7,9 @@ var mySwiper = new Swiper(".swiper-container", {
     nextEl: ".slider-button--next",
     prevEl: ".slider-button--prev",
   },
+
+  // Управление с клавиатуры
+  keyboard: {
+    enabled: true,
+  },
 });
