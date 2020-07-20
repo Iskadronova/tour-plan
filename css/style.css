@@ -594,6 +594,33 @@ template {
 .swiper-container {
   width: 600px;
   height: 300px;
+  position: relative;
+}
+
+.slider-button {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 99;
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px;
+  background-color: transparent;
+}
+
+.slider-button--next {
+  right: 18px;
+  background-image: url(../img/arrow-next.svg);
+}
+
+.slider-button--prev {
+  left: 18px;
+  background-image: url(../img/arrow-prev.svg);
 }
 
 @media (max-width: 1200px) {
