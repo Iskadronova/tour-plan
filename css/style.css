@@ -856,7 +856,7 @@ template {
 .subscribe {
   position: relative;
   width: 350px;
-  height: 55px;
+  min-height: 55px;
   border-radius: 4px;
   overflow: hidden;
 }
@@ -879,6 +879,7 @@ template {
   right: 0;
   top: 0;
   min-width: 65px;
+  max-width: 100px;
   height: 100%;
   border: none;
   background-color: #EC1F46;
