@@ -1191,6 +1191,9 @@ template {
         -ms-flex-align: start;
             align-items: flex-start;
   }
+  .reviews {
+    padding-bottom: 60px;
+  }
   .reviews-slider__item {
     padding: 0 30px 30px;
   }
@@ -1211,6 +1214,11 @@ template {
     margin-right: -65px;
     -webkit-transform: translate(50%, 0);
             transform: translate(50%, 0);
+  }
+  .reviews__title {
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 50px;
   }
 }
 
@@ -1238,6 +1246,14 @@ template {
   }
   .subscribe {
     width: 100%;
+  }
+  .reviews {
+    padding-bottom: 50px;
+  }
+  .reviews__title {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 42px;
   }
 }
 
