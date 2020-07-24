@@ -1206,13 +1206,13 @@ template {
   }
   .reviews-slider__button--prev {
     left: 50%;
-    margin-left: -75px;
+    margin-left: -90px;
     -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
   }
   .reviews-slider__button--next {
     right: 50%;
-    margin-right: -75px;
+    margin-right: -90px;
     -webkit-transform: translate(50%, 0);
             transform: translate(50%, 0);
   }
@@ -1221,7 +1221,6 @@ template {
     font-size: 30px;
     line-height: 38px;
     margin-bottom: 50px;
-    max-width: 245px;
   }
 }
 
@@ -1257,6 +1256,7 @@ template {
     font-size: 18px;
     line-height: 23px;
     margin-bottom: 42px;
+    max-width: 245px;
   }
 }
 
