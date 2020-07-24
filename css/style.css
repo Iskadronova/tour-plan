@@ -885,6 +885,7 @@ template {
   border: none;
   background-color: #EC1F46;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .reviews {
@@ -1205,20 +1206,22 @@ template {
   }
   .reviews-slider__button--prev {
     left: 50%;
-    margin-left: -65px;
+    margin-left: -75px;
     -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
   }
   .reviews-slider__button--next {
     right: 50%;
-    margin-right: -65px;
+    margin-right: -75px;
     -webkit-transform: translate(50%, 0);
             transform: translate(50%, 0);
   }
   .reviews__title {
+    margin: auto;
     font-size: 30px;
     line-height: 38px;
     margin-bottom: 50px;
+    max-width: 245px;
   }
 }
 

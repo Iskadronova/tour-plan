@@ -28,4 +28,4 @@ var reviewsSlider = new Swiper(".reviews-slider", {
     enabled: true,
   },
 });
-$(".parallax-window").parallax({ imageSrc: "../img/newsletter-bg.jpg" });
+$(".parallax-window").parallax({ imageSrc: "./img/newsletter-bg.jpg" });
