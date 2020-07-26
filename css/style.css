@@ -948,6 +948,7 @@ template {
 }
 
 .tour-info {
+  width: 100%;
   padding: 30px 25px 21px 32px;
 }
 
