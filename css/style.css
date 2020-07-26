@@ -843,11 +843,14 @@ template {
 .tour-haven__offer {
   position: relative;
   width: 50%;
+  height: 100%;
 }
 
 .tour-haven__image {
-  width: 366px;
-  height: 500px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .tour-haven__flash {
@@ -868,6 +871,7 @@ template {
 
 .tour-haven__info {
   width: 50%;
+  height: 100%;
   padding: 46px 21px 30px 43px;
   background-color: #0A223D;
   color: #ffffff;
@@ -904,7 +908,7 @@ template {
 
 .tour__image {
   width: 350px;
-  height: 250px;
+  height: 50%;
 }
 
 .tour__one {
@@ -1404,6 +1408,60 @@ template {
   .hotel-slider {
     width: 100%;
   }
+  .packages-cards {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: 400px 400px 400px;
+        grid-template-rows: 400px 400px 400px;
+  }
+  .tour-haven__info {
+    padding: 26px 20px 20px 33px;
+  }
+  .tour-haven__title {
+    margin-bottom: 17px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .tour-haven__description {
+    margin-bottom: 17px;
+    font-size: 12px;
+  }
+  .tour-haven__room {
+    margin-bottom: 12px;
+  }
+  .tour-room__description {
+    font-size: 10px;
+    line-height: 13px;
+  }
+  .tour-room__text {
+    margin-bottom: 4px;
+  }
+  .tour-price__old {
+    font-size: 12px;
+  }
+  .tour-price__new {
+    font-size: 20px;
+  }
+  .tour__button {
+    font-size: 12px;
+    line-height: 15px;
+    width: 100px;
+    height: 30px;
+  }
+  .tour__offer {
+    height: 50%;
+  }
+  .tour__image {
+    height: 100%;
+  }
+  .tour-info {
+    padding: 20px 15px 11px 22px;
+  }
+  .tour-info__title {
+    margin-bottom: 13px;
+    font-size: 16px;
+    line-height: 18px;
+  }
   .booking {
     width: 340px;
   }
@@ -1604,6 +1662,71 @@ template {
   .card {
     width: 100%;
   }
+  .packages-cards {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 300px 300px 300px 300px 300px;
+        grid-template-rows: 300px 300px 300px 300px 300px;
+  }
+  .tour-haven {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  .tour-haven__info {
+    padding: 20px 15px 11px 22px;
+  }
+  .tour-haven__description {
+    display: none;
+  }
+  .tour-haven__room {
+    margin-bottom: 30px;
+  }
+  .tour-haven__title {
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .tour-room {
+    margin-bottom: 30px;
+  }
+  .tour__one {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .tour__offer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    width: 50%;
+  }
+  .tour-info__title {
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .tour__image {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .tour__book {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .tour-price {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .stars {
+    display: none;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1611,9 +1734,6 @@ template {
     height: 179px;
     width: 34px;
     width: 730px;
-    height: 500px;
-    left: 165px;
-    top: 1020px;
   }
 }
 /*# sourceMappingURL=style.css.map */

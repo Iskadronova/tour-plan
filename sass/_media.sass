@@ -41,6 +41,49 @@
       flex-direction: row
     &-slider
       width: 100%
+  .packages
+    &-cards
+      grid-template-columns: repeat(2, 1fr)
+      grid-template-rows: 400px 400px 400px
+  .tour
+    &-haven
+      &__info
+        padding: 26px 20px 20px 33px
+      &__title
+        margin-bottom: 17px
+        font-size: 16px
+        line-height: 18px
+      &__description
+        margin-bottom: 17px
+        font-size: 12px
+      &__room
+        margin-bottom: 12px
+    &-room
+      &__description
+        font-size: 10px
+        line-height: 13px
+      &__text
+        margin-bottom: 4px
+    &-price
+      &__old
+        font-size: 12px
+      &__new
+        font-size: 20px
+    &__button
+      font-size: 12px
+      line-height: 15px
+      width: 100px
+      height: 30px
+    &__offer
+      height: 50%
+    &__image
+      height: 100%
+    &-info
+      padding: 20px 15px 11px 22px
+      &__title
+        margin-bottom: 13px
+        font-size: 16px
+        line-height: 18px
   .booking
     width: 340px
   .map
@@ -178,12 +221,51 @@
       max-width: 245px
   .card
     width: 100%
+  .packages
+    &-cards
+      grid-template-columns: 1fr
+      grid-template-rows: 300px 300px 300px 300px 300px
+  .tour
+    &-haven
+      flex-wrap: nowrap
+      grid-column: 1/2
+      &__info
+        padding: 20px 15px 11px 22px
+      &__description
+        display: none
+      &__room
+        margin-bottom: 30px
+      &__title
+        margin-bottom: 30px
+        font-size: 18px
+        line-height: 20px
+    &-room
+      margin-bottom: 30px
+    &__one
+      display: flex
+      flex-wrap: wrap
+    &__offer
+      display: flex
+      height: 100%
+      width: 50%
+    &-info
+      &__title
+        margin-bottom: 30px
+        font-size: 18px
+        line-height: 20px
+    &__image
+      width: 100%
+      object-fit: cover
+    &__book
+      flex-wrap: wrap
+    &-price
+      width: 100%
+      margin-bottom: 15px
+  .stars
+    display: none
 @media (max-width: 480px)
   .hotel
     &-slider
       height: 179px
       width: 34px
-      width: 730px;
-      height: 500px;
-      left: 165px;
-      top: 1020px;
+      width: 730px
