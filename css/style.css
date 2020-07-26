@@ -1706,14 +1706,15 @@ template {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
   .tour__offer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     height: 100%;
+    width: 50%;
+  }
+  .tour-info {
     width: 50%;
   }
   .tour-info__title {
