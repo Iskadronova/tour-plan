@@ -1933,5 +1933,8 @@ template {
   .modal__message {
     margin-bottom: 50px;
   }
+  .button {
+    min-width: 130px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
