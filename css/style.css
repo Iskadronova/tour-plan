@@ -1418,7 +1418,7 @@ template {
 
 .modal__message {
   width: 100%;
-  min-height: 123px;
+  max-height: 123px;
   margin-bottom: 15px;
 }
 
@@ -1918,10 +1918,9 @@ template {
   }
   .modal__dialog {
     width: 100%;
-    top: 0;
+    top: 20%;
     left: 0;
     right: 0;
-    bottom: 0;
     -webkit-transform: none;
             transform: none;
   }
