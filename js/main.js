@@ -62,4 +62,24 @@ $(document).ready(function () {
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
   }
+
+  // Обработка форм
+  $(".form").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Please specify your full name",
+          minlength: "The name must be at least 2 letters long",
+        },
+        phone: {
+          required: "Please enter your phone number",
+        },
+        email: {
+          required: "Please enter your email address",
+          email: "Email must be in the format name@domain.com",
+        },
+      },
+    });
+  });
 });

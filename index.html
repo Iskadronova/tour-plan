@@ -263,12 +263,13 @@
         <h2 class="newsletter-title newsletter__title">subscribe to our
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
-        <form action="send.php" method="POST" class="subscribe newsletter__subscribe">
+        <form action="send.php" method="POST" class="subscribe newsletter__subscribe form">
           <input 
-            type="text" 
+            type="email"
             class="subscribe__input" 
             placeholder="Your email address" 
             name="email"
+            required
           />
           <button class="subscribe__button">Send</button>
         </form>
@@ -523,19 +524,13 @@
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title_mb-3">Send us a message</h3>
-            <form action="send.php" method="POST" class="footer__form">
-              <input 
-                type="text" 
-                class="input footer__input" 
-                placeholder="Your Full Name*"
-                name="name"
-              />
-              <input 
-                type="text" 
-                class="input footer__input" 
-                placeholder="Phone Number*"
-                name="phone"
-              />
+            <form action="send.php" method="POST" class="footer__form form">
+              <div class="footer__input-group">
+                <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required minlength="2" />
+              </div>
+              <div class="footer__input-group">
+                <input type="tel" class="input footer__input" placeholder="Phone Number*" name="phone" required />
+              </div>
               <textarea
                 class="message footer__message" 
                 cols="20" 
@@ -580,10 +575,10 @@
           <img src="img/close.svg" alt="icon: close">
         </a>
         <h3 class="modal__title modal__title_mb-3">Booking</h3>
-        <form action="send.php" method="POST" class="modal__form">
-          <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" />
-          <input type="text" class="input modal__input" placeholder="Phone Number*" name="phone" />
-          <input type="text" class="input modal__input" placeholder="Email*" name="email" />
+        <form action="send.php" method="POST" class="modal__form form">
+          <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2"/>
+          <input type="tel" class="input modal__input" placeholder="Phone Number*" name="phone" required/>
+          <input type="email" class="input modal__input" placeholder="Email*" name="email" required/>
           <textarea class="message modal__message" cols="20" rows="10" placeholder="Message" name="message"></textarea>
           <button class="button modal__button">Send</button>
           <span class="modal__info">* Required Fields</span>
@@ -602,10 +597,10 @@
           <img src="img/close.svg" alt="icon: close">
         </a>
         <h3 class="modal__title modal__title_mb-3">Send us a feedback</h3>
-        <form action="send.php" method="POST" class="modal__form">
-          <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" />
-          <input type="text" class="input modal__input" placeholder="Phone Number*" name="phone" />
-          <input type="text" class="input modal__input" placeholder="Email*" name="email" />
+        <form action="send.php" method="POST" class="modal__form form">
+          <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2"/>
+          <input type="text" class="input modal__input" placeholder="Phone Number*" name="phone" required/>
+          <input type="text" class="input modal__input" placeholder="Email*" name="email" required/>
           <textarea class="message modal__message" cols="20" rows="10" placeholder="Message" name="message"></textarea>
           <button class="button modal__button">Send</button>
           <span class="modal__info">* Required Fields</span>
@@ -618,6 +613,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/parallax.js-1.5.0/parallax.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
