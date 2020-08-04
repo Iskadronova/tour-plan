@@ -599,8 +599,8 @@
         <h3 class="modal__title modal__title_mb-3">Send us a feedback</h3>
         <form action="send.php" method="POST" class="modal__form form">
           <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2"/>
-          <input type="text" class="input modal__input phone" placeholder="Phone Number*" name="phone" required/>
-          <input type="text" class="input modal__input" placeholder="Email*" name="email" required/>
+          <input type="tel" class="input modal__input phone" placeholder="Phone Number*" name="phone" required/>
+          <input type="email" class="input modal__input" placeholder="Email*" name="email" required/>
           <textarea class="message modal__message" cols="20" rows="10" placeholder="Message" name="message"></textarea>
           <button class="button modal__button">Send</button>
           <span class="modal__info">* Required Fields</span>

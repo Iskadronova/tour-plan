@@ -67,6 +67,12 @@ $(document).ready(function () {
   $(".form").each(function () {
     $(this).validate({
       errorClass: "invalid",
+      rules: {
+        phone: {
+          required: true,
+          number: true,
+        },
+      },
       messages: {
         name: {
           required: "Please specify your full name",
@@ -74,6 +80,7 @@ $(document).ready(function () {
         },
         phone: {
           required: "Please enter your phone number",
+          number: "Invalid phone number",
         },
         email: {
           required: "Please enter your email address",
