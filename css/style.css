@@ -77,6 +77,13 @@ label.invalid {
   padding-left: 10px;
 }
 
+.invalid {
+  -webkit-animation: shakeX;
+          animation: shakeX;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
