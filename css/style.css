@@ -24,6 +24,7 @@ img {
   border: none;
   padding: 0 23px;
   height: 50px;
+  width: 100%;
 }
 
 .message {
@@ -63,7 +64,7 @@ form {
       flex-wrap: wrap;
 }
 
-.invalid {
+label.invalid {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1431,7 +1432,7 @@ template {
   text-align: center;
 }
 
-.modal__input {
+.modal__input-group {
   width: 100%;
   margin-top: 15px;
 }
@@ -1948,7 +1949,7 @@ template {
     -webkit-transform: none;
             transform: none;
   }
-  .modal__input {
+  .modal__input-group {
     margin-top: 20px;
   }
   .modal__message {
