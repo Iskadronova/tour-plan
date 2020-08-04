@@ -265,13 +265,9 @@
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
         <form action="send.php" method="POST" class="subscribe newsletter__subscribe form">
-          <input 
-            type="email"
-            class="subscribe__input" 
-            placeholder="Your email address" 
-            name="email"
-            required
-          />
+          <div class="subscribe__input-group">
+            <input type="email" class="subscribe__input" placeholder="Your email address" name="email" required />
+          </div>
           <button class="subscribe__button">Send</button>
         </form>
       </div>
@@ -505,9 +501,18 @@
                   >
                 </div>
                 <!-- /.footer__icon-wrapper -->
-                Tel (business hours) : 269 1500 <br>
-                Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm) <br>
-                Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+                <div class="footer__item-contacts">
+                  <span>Tel (business hours) :</span>
+                  <a class="footer__link" href="tel:2691500">269 1500</a>
+                  <br>
+                  <span>Tel (hotline) Monday - Saturday:</span>
+                  <a class="footer__link" href="tel:52566138">52-56-61-38</a>
+                  <span>(08:00 am – 20:00 pm)</span>
+                  <br>
+                  <span>Tel (hotline) Sunday:</span>
+                   <a class="footer__link" href="tel:52566138">52-56-61-38</a>
+                   <span>(08:00 am – 14:00 pm)</span>
+                </div>
               </li>
               <li class="footer__item footer__item_mb-2">
                 <div class="footer__icon-wrapper">
