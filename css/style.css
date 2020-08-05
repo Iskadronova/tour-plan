@@ -80,8 +80,8 @@ label.invalid {
 .invalid {
   -webkit-animation: shakeX;
           animation: shakeX;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 .subscribe__input-group > label.invalid {
