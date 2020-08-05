@@ -70,7 +70,8 @@ $(document).ready(function () {
       rules: {
         phone: {
           required: true,
-          number: true,
+          minlength: 18,
+          // number: true,
         },
       },
       messages: {
@@ -80,7 +81,7 @@ $(document).ready(function () {
         },
         phone: {
           required: "Please enter your phone number",
-          number: "Invalid phone number",
+          minlength: "Invalid phone number",
         },
         email: {
           required: "Please enter your email address",
