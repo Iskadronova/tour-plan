@@ -1,0 +1,81 @@
+.packages
+  padding-top: 40px
+  padding-bottom: 70px
+  &__title
+    font-style: normal
+    font-weight: bold
+    font-size: 36px
+    line-height: 45px
+    text-align: center
+    text-transform: uppercase
+  &-cards
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: repeat(2, 500px)
+    row-gap: 30px
+    column-gap: 30px
+  &__double
+    display: flex
+  &-double
+    grid-column-start: 1
+    grid-column-end: 3
+    border-radius: 8px
+    overflow: hidden
+    &__offer
+      position: relative
+      display: flex
+    &__image
+      width: 366px
+      height: 500px
+    &__flash
+      position: absolute
+      top: 0
+      left: 0
+      color: $light
+    &__info
+      display: flex
+      flex-wrap: wrap
+      width: 50%
+      padding: 46px 21px 30px 43px
+      background-color: $dark
+      color: $light
+    &__title
+      width: 100%
+      margin: 0
+      margin-bottom: 27px
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 23px
+    &__description
+      margin-bottom: 34px
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 160.6%
+  &__room
+    margin-bottom: 37px
+  &-room
+    &__text
+      margin-bottom: 11px
+    &__description
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+  &-price
+    display: flex
+    flex-wrap: wrap
+    &__old
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 18px
+      text-decoration-line: line-through
+    &__new
+      font-style: normal
+      font-weight: bold
+      font-size: 24px
+      line-height: 30px
+.stars
+  margin-bottom: 5px
