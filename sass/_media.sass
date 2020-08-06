@@ -346,10 +346,14 @@
       max-width: 245px
   .card
     width: 100%
-  .packages
+.packages
+  &__title
+    font-size: 18px
+    line-height: 23px
+    margin-bottom: 32px
     &-cards
       grid-template-columns: 1fr
-      grid-template-rows: 300px 300px 300px 300px 300px
+      grid-auto-rows: 300px
   .tour
     &-haven
       flex-wrap: nowrap
@@ -387,8 +391,8 @@
     &-price
       width: 100%
       margin-bottom: 15px
-  // .stars
-  //   display: none
+  .stars
+    display: none
   .activities
     padding-bottom: 40px
   .footer
