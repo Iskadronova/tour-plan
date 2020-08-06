@@ -115,33 +115,35 @@
     height: 255px
   .footer
     &-wrapper
-      grid-template-columns: repeat(6, 1fr)
+      grid-template-columns: repeat(12, 1fr)
       grid-row-gap: 40px
-    &__input
-      &-group
-        flex-basis: 48%
     &__logo
       grid-row: 1 / 2
-      grid-column: span 2
+      grid-column: span 3
     &__social
       &-network
         grid-row: 1 / 2
-        grid-column: span 4
+        grid-column: span 9
         align-self: center
     &__categories
       grid-row: 2 / 3
-      grid-column: span 2
-    &__legal
-      grid-column: span 2
+      grid-column: span 3
     &__additional
-      grid-column: span 2
+      grid-column: span 5
+      margin-left: 20px
+    &__legal
+      grid-column: span 4
+      margin-left: 20px
     &__contact
       &-details
-        grid-column: span 5
+        grid-column: span 12
         grid-row: 3
       &-form
-        grid-column: span 5
+        grid-column: span 9
         grid-row: 4
+    &__input
+      &-group
+        flex-basis: 48%
   .info
     &-text
       margin-right: 50px
