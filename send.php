@@ -21,7 +21,8 @@ if (empty($email)) {
     <b>Телефон:</b> $phone<br><br>
     <b>Сообщение:</b><br>$message";}
 //если есть почта и нет имени - то это рассылка (subscribe to our NEWSLETTER)
-elseif (empty($name)){
+else
+if (empty($name)){
     // Формирование письма с рассылкой
     $title = "Рассылка Best Tour Plan";
     $body = "
@@ -62,7 +63,8 @@ try {
         $mail->addAddress('Candy__88@mail.ru');
     }
     //если есть почта и нет имени - то это рассылка (subscribe to our NEWSLETTER)
-    elseif (empty($name)){
+    else
+    if (empty($name)){
         // Получатель письма
         $mail->addAddress('Candy__88@mail.ru');
         $mail->addAddress($email);
@@ -91,6 +93,7 @@ try {
 //Если нет почты, то это обращение (SEND US A MESSAGE в FOOTER)
 if (empty($email)) {header('Location: message.html');}
 //если есть почта и нет имени - то это рассылка (subscribe to our NEWSLETTER)
-elseif (empty($name)){header('Location: newsletter.html');}
+else
+if (empty($name)){header('Location: newsletter.html');}
 //если есть почта и есть имя - то это бронирование (BOOKING)
-else {header('Location: booking.html');
+else {header('Location: booking.html');}
