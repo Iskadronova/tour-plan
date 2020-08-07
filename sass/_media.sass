@@ -465,10 +465,20 @@
       padding-top: 20px
     &-menu
       padding-top: 0
+      justify-content: space-evenly
+      flex-direction: row
+      flex-wrap: wrap
       &__item
         margin-bottom: 7px
+        margin-top: 20px
+        &_mobile_visible
+          width: 100%
+          margin: auto
+          padding-top: 20px
   .search
     height: 35px
+    width: fit-content
+    margin: auto
     &__input
       width: 250px
 @media (max-width: 480px)
