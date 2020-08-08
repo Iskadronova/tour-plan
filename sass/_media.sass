@@ -58,7 +58,9 @@
   .tour
     &-haven
       &__info
-        padding: 26px 20px 20px 33px
+        display: flex
+        flex-wrap: wrap
+        padding: 20px 15px 20px 22px
       &__title
         margin-bottom: 17px
         font-size: 16px
@@ -69,11 +71,14 @@
       &__room
         margin-bottom: 12px
     &-room
+      margin-bottom: 14px
       &__description
         font-size: 10px
         line-height: 13px
       &__text
         margin-bottom: 4px
+    &__book
+      width: 100%
     &-price
       &__old
         font-size: 12px
@@ -89,11 +94,14 @@
     &__image
       height: 100%
     &-info
-      padding: 20px 15px 11px 22px
+      padding: 20px 15px 20px 22px
       &__title
         margin-bottom: 13px
         font-size: 16px
         line-height: 18px
+  .stars
+    display: -webkit-box
+    margin: 0
   .booking
     width: 340px
   .map
