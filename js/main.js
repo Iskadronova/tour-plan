@@ -63,6 +63,26 @@ $(document).ready(function () {
     modalDialog.removeClass("modal__dialog--visible");
   }
 
+  //Обработка новостной рассылки
+  $(".mail-newsletter").validate({
+    errorClass: "error",
+    messages: {
+      email: {
+        required: "Please enter your email address",
+        email: "Email must be in the format name@domain.com",
+      },
+    },
+  });
+
+  //
+  jQuery.validator.addMethod(
+    "lettersonly",
+    function (value, element) {
+      return this.optional(element) || /^[a-z]+$/i.test(value);
+    },
+    "Letters only please"
+  );
+
   // Обработка форм
   $(".form").each(function () {
     $(this).validate({
@@ -71,13 +91,16 @@ $(document).ready(function () {
         phone: {
           required: true,
           minlength: 18,
-          // number: true,
+        },
+        name: {
+          lettersonly: true,
         },
       },
       messages: {
         name: {
           required: "Please specify your full name",
           minlength: "The name must be at least 2 letters long",
+          lettersonly: "Invalid name",
         },
         phone: {
           required: "Please enter your phone number",

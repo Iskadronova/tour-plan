@@ -44,13 +44,24 @@ label.invalid
   position: absolute
   display: flex
   flex-wrap: wrap
+  font-size: 10px
+  padding-left: 10px
+.invalid
+  animation: shakeX
+  animation-duration: 1s
+  color: #FB748E
+  border-bottom: 2px solid #FB748E
+// .subscribe__input-group>label.invalid
+//   top: 40px
+label.error
+  animation: shakeX
+  animation-duration: 1s
+  position: absolute
+  display: flex
+  flex-wrap: wrap
   color: red
   border-bottom: 2px solid red
   font-size: 10px
   padding-left: 10px
   bottom: 2px
-.invalid
-  animation: shakeX
-  animation-duration: 1s
-// .subscribe__input-group>label.invalid
-//   top: 40px
+
